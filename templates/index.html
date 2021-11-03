@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+</head>
+<body>
+<h1>サインアップページ</h1>
+<form action="{{ url_for ('Connect_api')}}">
+    <div> 
+        <label for="city">都市名: </label> 
+        <select name = "city">
+            <option value="">選択してください</option>
+            <option value="Hokkaido">北海道</option>
+            <option value="Tokyo">東京</option>
+            <option value="Osaka">大阪</option>
+            <option value="Fukuoka">福岡</option>
+            <option value="Okinawa">沖縄</option>
+        </select>
+    </div>
+    <div>
+        <input type="submit", value="送信">
+    </div>
+</form>
+</body>       
+</html>
